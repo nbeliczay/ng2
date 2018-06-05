@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<div class="container">
+  <app-recipes></app-recipes>
+  <app-shopping-list></app-shopping-list>
+</div>
+
+<router-outlet></router-outlet>
+
+<router-outlet name="modal"></router-outlet>
+
+
+<ul>
+  <li>
+    <a [routerLink]="[ {outlets: { modal: 'login' } } ]">Login</a>
+  </li>
+</ul>
